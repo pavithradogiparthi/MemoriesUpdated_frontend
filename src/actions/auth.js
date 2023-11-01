@@ -9,7 +9,7 @@ export const signin = (formData, router) => async (dispatch) => {
 
     router.push('/');
   } catch (error) {
-    console.log(error);
+    window.alert(error.response.data.message);
   }
 };
 
@@ -21,6 +21,6 @@ export const signup = (formData, router) => async (dispatch) => {
 
     router.push('/');
   } catch (error) {
-    console.log(error);
+    window.alert(error.response.data.message);
   }
 };
